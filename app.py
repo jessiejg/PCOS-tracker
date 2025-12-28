@@ -10,9 +10,9 @@ st.markdown("### Medical Analysis based on BMI & Menstrual Cycles")
 st.header("1. Physical Profile")
 col_a, col_b = st.columns(2)
 with col_a:
-    weight = st.number_input("Weight (kg)", min_value=0.0, step=0.1)
+    weight = st.number_input("Weight (kg)", min_value=1.0, step=0.1)
 with col_b:
-    height_cm = st.number_input("Height (cm)", min_value=0.0, step=0.1)
+    height_cm = st.number_input("Height (cm)", min_value=1.0, step=0.1)
 
 # Section 2: Cycle History (Calendar Input)
 st.header("2. Menstrual Cycle History")
@@ -85,4 +85,5 @@ if st.button("Run Diagnostic Analysis"):
         st.error("Please ensure all physical measurements are entered correctly.")
 
 st.divider()
+
 st.caption("Project by: Nichaphat Theodthai, Jessie Josephine Gunawan, Sai Yasaswi Gangula, & Kopparthi Roshni")
